@@ -1,0 +1,25 @@
+{
+  "name": "major-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darsh0230/major-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darsh0230/major-project/issues"
+  },
+  "homepage": "https://github.com/darsh0230/major-project#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
