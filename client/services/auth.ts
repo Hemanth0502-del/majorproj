@@ -35,7 +35,7 @@ export async function emailRegister(
       return true;
     }
   } catch (e: any) {
-    return e.response.data.msg;
+    return e?.response?.data?.msg ?? e?.message ?? "Something went wrong";
   }
 
   return false;
@@ -73,7 +73,7 @@ export async function emailLogin(
       return true;
     }
   } catch (e: any) {
-    return e.response.data.msg;
+    return e?.response?.data?.msg ?? e?.message ?? "Something went wrong";
   }
 
   return false;
